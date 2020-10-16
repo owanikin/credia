@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Credibly- | Connecting SMEs to Finance>
+    <meta name="author" content="Owanikin">
+    <title>Credia | Powering African Businesses with access to Finance</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/credia-typo-new2@4x-8.png" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png"> -->
+    <!-- <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png"> -->
+    <!-- <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png"> -->
+	<!-- <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png"> -->
+	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init(' user_k0sKuuv8IzGT76SwGaz2I');
+        })();
+    </script>
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div class="container-fluid">
+	    <div class="row row-height">
+	        <div class="col-xl-4 col-lg-4 content-left">
+	            <div class="content-left-wrapper">
+
+					<div id="social">
+	                    <ul>   
+							<li><a href="https://twitter.com/getcredia"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.instagram.com/getcredia/?hl=en"><i class="icon-instagram"></i></a></li>
+	                        <li><a href="https://www.linkedin.com/company/getcredia/"><i class="icon-linkedin"></i></a></li>
+	                    </ul>
+	                </div>
+	                <!-- /social -->
+	                <div>
+	                    <figure><img src="img/credia-logo-white.svg" alt="" class="img-fluid" width="270" height="270"></figure>
+	                    <p>Powering African businesses with access to financing.</p>
+	                </div>
+	                <div class="copy">© 2020 Credia</div>
+	            </div>
+	            <!-- /content-left-wrapper -->
+	        </div>
+	        <!-- /content-left -->
+	        <div class="col-xl-8 col-lg-8 content-right" id="start">
+	            <div id="wizard_container">
+	                <div id="top-wizard">
+	                    <span id="location"></span>
+	                    <div id="progressbar"></div>
+	                </div>
+	                <!-- /top-wizard -->
+	                <form id="wrapped" method="post" enctype="multipart/form-data" >
+	                    <input id="website" name="website" type="text" value="">
+	                    <!-- Leave for security protection, read docs for details -->
+	                    <div id="middle-wizard">
+	                        <div class="step">
+	                            <h4 class="main_question">Business Assessment</h3>
+	                            <div class="form-group add_top_30">
+	                                <label for="name">First and Last Name</label>
+	                                <input type="text" name="name" id="name" class="form-control required" onchange="getVals(this, 'name_field');">
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="email">Email Address</label>
+	                                <input type="email" name="email" id="email" class="form-control required" onchange="getVals(this, 'email_field');">
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="phone">Phone</label>
+	                                <input type="text" name="phone" id="phone" class="form-control required">
+								</div>
+								<div class="form-group add_top_30">
+	                                <label for="name">Company Name</label>
+	                                <input type="text" name="name" id="companyname" class="form-control required">
+	                            </div>
+					
+	                        </div>
+	                        <!-- /step-->
+
+	                        <!-- /Start Branch ============================== -->
+	                    	<div class="step">
+
+								<div class="form-group add_bottom_30">
+									<div class="styled-select">
+										<label for="name">Type of business registation</label>
+										<select class="form-control required" id="typeofregistration" name="typeofregistration">
+											<option value="">Select type of business registration</option>
+											<option value="businessname">Business Name</option>
+											<option value="ltd">Private Limited Company (LTD)</option>
+											<option value="trustees">Incorporated Trustees</option>
+											<option value="plc">Public Liability Company (PLC)</option>
+											<option value="notregisted">I am not a registered business yet</option>
+										</select>
+									</div>
+								</div>
+				
+								<div class="form-group add_bottom_30">
+									<div class="styled-select">
+										<label for="name">What is your business category?</label>
+										<select class="form-control required" id="natureofbusiness" name="natureofbusiness">
+											<option value="">Select Nature of business</option>
+											<option value="agriculture">Agriculture</option>
+											<option value="automative">Automotive Sales/Repair/Maintenance</option>
+											<option value="cosmetics">Cosmetics</option>
+											<option value="consultancy">Consultancy</option>
+											<option value="construction">Construction (Building Construction, Contractors, etc.)</option>
+											<option value="education">Education</option>
+											<option value="fashion">Fashion</option>
+											<option value="finance">Finance, Insurance</option>
+											<option value="food_beverage">Food & Beverage</option>
+											<option value="health">Health Services</option>
+											<option value="hospitality">Hospitality</option>
+											<option value="internet">Internet Services</option>
+											<option value="legal">Legal Services</option>
+											<option value="manufacturing">Manufacturing</option>
+											<option value="media">Media, Advertising & Publishing</option>
+											<option value="oil_gas">Oil & Gas</option>
+											<option value="recycling">Recycling</option>
+											<option value="restaurant">Restaurant, Caterings, Bars</option>
+											<option value="retail_online">Retail - Primarily Online</option>
+											<option value="retail_offline">Retail - Primarily Offline</option>
+											<option value="transportation">Transportation</option>
+											<option value="wholesale">Wholesale Trade</option>
+										</select>
+									</div>
+								</div>
+
+								
+								<div class="form-group add_bottom_30">
+									<div class="styled-select">
+										<label for="name">How long has your business been in operation?</label>
+										<select class="form-control required" id="yearsinoperation" name="yearsinoperation">
+											<option value="">Select duration</option>
+											<option value="6">0 - 6months</option>
+											<option value="12">7 - 12months</option>
+											<option value="3">1 - 3 years</option>
+											<option value="5">3 - 5 years</option>
+											<option value="above_5">Above 5 years</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group add_bottom_30">
+									<div class="styled-select">
+										<label for="name">What is your current staff size?</label>
+										<select class="form-control required" id="staffsize" name="staffsize">
+											<option value="">Select staff size</option>
+											<option value="lessthan5">less than 5</option>
+											<option value="6-10">6 - 10</option>
+											<option value="10-20">11 - 20</option>
+											<option value="21-50">21 - 50</option>
+											<option value="51-100">51 - 100</option>
+											<option value="over100">Over 100</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group add_bottom_30">
+									<div class="">
+										<label for="name">Do you have a corporate account?</label>
+										<select class="form-control required" id="corporate" name="corporate">
+											<option value="">Select</option>
+											<option value="yes">Yes</option>
+											<option value="no">No</option>   
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="step">
+
+								<div class="form-group add_bottom_30">
+									<div class="">
+										<label for="name">Have you been transacting with your corporate account in the past 6 months?</label>
+										<select class="form-control required" id="transacting" name="transacting">
+											<option value="">Select</option>
+											<option value="yes">Yes</option>
+											<option value="no">No</option>   
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group add_bottom_30">
+									<div class="">
+										<label for="name">How often does your business require financing?</label>
+										<select class="form-control required" id="howlong" name="howlong">
+											<option value="">Select how often</option>
+											<option value="monthly">Monthly (30 days)</option>
+											<option value="quarterly">Quarterly (90 days)</option>
+											<option value="half-yealry">Half-yearly (6 Months)</option>
+											<option value="yearly">Yearly (12 Months)</option>   
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group add_bottom_30">
+									<div class="styled-select">
+										<label for="name">What kind of financing does your business needs?</label>
+										<select class="form-control required" id="kindoffinance" name="kindoffinance">
+											<option value="">Select your kind of financing</option>
+											<option value="loans">Business loan</option>
+											<option value="govenrment">Government funds</option>
+											<option value="grants">Grants</option>
+											<option value="venture_captial">Venture Capital</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group add_bottom_30">
+									<div class="styled-select">
+										<label for="name">How much in financing do you need?</label>
+										<select class="form-control required" id="howmuch" name="howmuch">
+											<option value="">Select how much you need</option>
+											<option value="lessthan100,000">less than N100,000</option>
+											<option value="100,000-N250,000">N100,000 - N250,000</option>
+											<option value="250,00-N500,000">N250,001 - N500,000</option>
+											<option value="500,001-N1,000,000">N500,001 - N1,000,000</option>
+											<option value="1,000,001-N5,000,000">N1,000,001 - N5,000,000</option>
+											<option value="over_5000,000">Over N5,000,000</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group add_bottom_30">
+									<div class="styled-select">
+										<label for="name">What will the financing be used for?</label>
+										<select class="form-control required" id="usedfor" name="usedfor">
+											<option value="">Select what your fiancing be used for</option>
+											<option value="asset">Asset financing</option>
+											<option value="businessexpansion">Business expansion</option>
+											<option value="lpo">Local purchasing order (LPO)</option>
+											<option value="marketing">Marketing</option>
+											<option value="inventory">Inventory financing</option>
+											<option value="importduties">Pay import duties</option>
+											<option value="working_capital">Working capital</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+
+						
+	                        <!-- /step-->
+
+	                        <div class="submit step" id="end">
+	                            <div class="summary">
+	                                <div class="wrapper">
+	                                    <h3>Thank your for your time<br><span id="name_field"></span>!</h3>
+	                                    <p>We will contact you shortly at the following email address <strong id="email_field">with further steps.</strong></p>
+	                                </div>
+	                                <div class="text-center">
+	                                    <div class="form-group terms">
+	                                        <label class="container_check">Please accept our <a href="#" data-toggle="modal" data-target="#terms-txt">Terms and conditions</a> before Submit
+	                                            <input type="checkbox" name="terms" value="Yes" class="required">
+	                                            <span class="checkmark"></span>
+	                                        </label>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- /step last-->
+
+	                    </div>
+	                    <!-- /middle-wizard -->
+	                    <div id="bottom-wizard">
+	                        <button type="button" name="backward" class="backward">Prev</button>
+	                        <button type="button" name="forward" class="forward">Next</button>
+	                        <button type="submit" onclick="formSubmit" name="process" class="submit">Submit</button>
+						</div>
+						
+	                    <!-- /bottom-wizard -->
+	                </form>
+	            </div>
+	            <!-- /Wizard container -->
+	        </div>
+	        <!-- /content-right-->
+	    </div>
+	    <!-- /row-->
+	</div>
+	<!-- /container-fluid -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+	<!-- <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a> -->
+	<!-- /menu button -->
+	
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common_scripts.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/common_functions.js"></script>
+	<script src="js/file-validator.js"></script>
+
+<!-- Firebase Scripts-->	
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="js/app.js"></script>
+
+	<!-- Wizard script-->
+	<script src="js/func_1.js"></script>
+
+</body>
+</html>
